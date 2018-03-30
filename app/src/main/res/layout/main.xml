@@ -1,41 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-android:id="@+id/linearLayout1"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:background="#ff000099"
-android:orientation="vertical"
-xmlns:android="http://schemas.android.com/apk/res/android"
->
-<TextView
-android:id="@+id/lblTopCaption"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:padding="2dp"
-android:text="Some important data is being collected. Patience please..."
-android:textSize="16sp"
-android:textStyle="bold"  />
-<ProgressBar
-android:id="@+id/myBar"
-style="?android:attr/progressBarStyleHorizontal"
-android:layout_width="match_parent"
-android:layout_height="wrap_content" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff00ff00"
+    android:orientation="vertical">
 
-<EditText
-android:id="@+id/txtBox1"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:layout_marginLeft="20dp"
-android:layout_marginRight="20dp"
-android:textSize="18sp" android:layout_marginTop="10dp"  />
+    <TextView
+        android:id="@+id/lblTopCaption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:text="Some important data is being collected. Patience please..."
+        android:textColor="#ffff0000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
-<Button
-android:id="@+id/btn"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:padding="10dp"
-android:layout_marginLeft="20dp"
-android:text="Click for Information" />
+    <ProgressBar
+        android:id="@+id/myBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/txtBox1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textColor="#ffff0000"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:padding="10dp"
+        android:text="Click for Information" />
 
 
 </LinearLayout>
