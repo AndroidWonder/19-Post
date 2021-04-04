@@ -8,6 +8,7 @@ package com.course.example.post;
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.text.Editable;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -29,7 +30,7 @@ public class Post extends Activity {
 	private String      CollectMsg = "Some important data is being collected now.";
 	
 	//Create Handler object to handle tasks placed on queue 
-	Handler   handler = new Handler();
+	Handler   handler = new Handler(Looper.getMainLooper());
 
 	@Override
     public void onCreate(Bundle savedInstanceState) {
