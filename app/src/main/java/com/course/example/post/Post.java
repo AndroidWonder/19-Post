@@ -52,6 +52,7 @@ public class Post extends Activity {
 				String txt = txtBox1.getText().toString();
 				Toast.makeText(Post.this, 
 						"You said - " + txt, Toast.LENGTH_SHORT).show();
+				txtBox1.setText("");
 			}       	
         });      
     }//onCreate
